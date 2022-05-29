@@ -11,5 +11,3 @@ print(purse['candy'])
 purse['candy'] = purse['candy'] + 2
 print(purse['candy'])
 print(purse)
-
-##
