@@ -38,3 +38,15 @@ counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
 for key in counts:
     if counts[key] > 10:
         print(key, counts[key])
+
+
+axd = dict()
+line = input('Enter line of text:')
+words = line.split()
+
+print('Words:', words)
+print('Counting...')
+
+for word in words:
+    axd[word] = axd.get(word, 0) + 1
+print('Counts', axd)
