@@ -86,3 +86,12 @@ for day in days:
 
 
 
+
+### sorting
+
+lista = [5,3,7,2,1]
+print(sorted(lista))
+
+lista = [5,3,7,2,1]
+print(sorted(lista, reverse=True))
+
