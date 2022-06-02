@@ -39,14 +39,47 @@ for key in counts:
     if counts[key] > 10:
         print(key, counts[key])
 
+print(list(counts))
 
-axd = dict()
-line = input('Enter line of text:')
-words = line.split()
+print(counts.keys())
 
-print('Words:', words)
-print('Counting...')
+print(counts.values())
 
-for word in words:
-    axd[word] = axd.get(word, 0) + 1
-print('Counts', axd)
+print(counts.items()) ### tuples inside
+
+# axd = dict()
+# line = input('Enter line of text:')
+# words = line.split()
+#
+# print('Words:', words)
+# print('Counting...')
+#
+# for word in words:
+#     axd[word] = axd.get(word, 0) + 1
+# print('Counts', axd)
+
+jjj= { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+
+for aaa,bbb in jjj.items():
+    print(aaa,bbb)
+
+
+
+name = input(str('Type the text:'))
+
+counts2 = dict()
+#
+# words = name.split() ## counting words
+# for line in words:
+#     counts2[line] = counts2.get(line,0) + 1
+#
+# print(counts2)
+
+
+for line in name:
+    words = line.split()  ## counting letters
+    for word in words:
+        counts2[word] = counts2.get(word,0) + 1
+
+print(counts2)
+
