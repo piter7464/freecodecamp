@@ -15,6 +15,8 @@ if (0, 1, 2) < (5, 1, 2): ## is comparing 0 to 5 and if it's lower then it's sto
 if ('Jones', 'Sally') < ('Jones', 'Sam'): ## because L in Sally is less than M it's comparing alphabet
     print('True')
 
+
+
 c = {'a' : 10, 'c' : 1, 'b' : 22}
 print(c.items())
 for k,v in sorted(c.items()):
